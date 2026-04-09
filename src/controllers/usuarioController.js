@@ -1,4 +1,4 @@
-const Usuario = requeride('../models/Usuario')
+const Usuario = require('../models/Usuario')
 
 //Obtener usuarios
 const getUsuarios = async (req, res)=>{

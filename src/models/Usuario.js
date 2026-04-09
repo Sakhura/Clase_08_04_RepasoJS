@@ -1,19 +1,19 @@
-const { Datatypes } = require('sequelize')
+const { DataTypes } = require('sequelize')
 const { sequelize } = require('../config/database')
 
 const Usuario = sequelize.define('Usuario', {
     //Sequelize genere un id automatico
     nombre:{
-        type: Datatypes.STRING,
+        type: DataTypes.STRING,
         allowNull: false // esto indica que el campo nombre es obligatorio 
     },
     email:{
-        type: Datatypes.STRING,
+        type: DataTypes.STRING,
         allowNull: false ,
         unique:true // no se puede repetir
     },
     edad:{
-        type: Datatypes.INTEGER,
+        type: DataTypes.INTEGER,
         allowNull: false
     }
 })
